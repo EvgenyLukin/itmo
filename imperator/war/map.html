@@ -19,9 +19,9 @@
 		map = new google.maps.Map(document.getElementById('map-canvas'),
 				mapOptions);
 
-		var contentString = 'здесь любят котиков'
+		var contentString = 'Точка А';
 				
-		var contentString2 = 'Она хотела бы жить на Манхэттене и с Деми Мур делиться секретами, а он просто диджей на радио...';
+		var contentString2 = 'Точка В';
 
 		var infowindow = new google.maps.InfoWindow({
 			content : contentString
@@ -30,7 +30,7 @@
 		var marker = new google.maps.Marker({
 			position : myLatlng,
 			map : map,
-			title : 'универ'
+			title : 'Точка А'
 		});
 		google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map, marker);
@@ -43,7 +43,7 @@
 		marker = new google.maps.Marker({
 			position : myLatlng,
 			map : map,
-			title : 'она хотела жить на Манхэттене'
+			title : 'Точка В'
 		});
 
 		infowindow = new google.maps.InfoWindow({
@@ -65,7 +65,7 @@
 	<div id="map-canvas"></div>
 	<p><a href="/index.html" class="knopkaBack">к заданиям</a></p>
 	</div>
-	<p class="credit">follow me<a href="http://vk.com" class="icon-vk"></a> <a href="https://github.com/PandaPonda" class="icon-github-circled"></a> <a href="https://plus.google.com/u/0/100337247794451035450/posts" class="icon-gplus"></a></p>
+	<p class="credit">Follow me<a href="http://vk.com" class="icon-vk"></a> <a href="https://github.com/Hohol05" class="icon-github-circled"></a></a></p>
 </div>
 </body>
 </html>
